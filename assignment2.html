@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    :root {
+      --primary-color: #ff7f50;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .item {
+      width: 400px;
+      height: 400px;
+      background-color: var(--primary-color);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      margin-bottom: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .item:hover {
+      background-color: palegreen;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        justify-content:center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .item {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<title> portfolio</title>
+<body>
+  <div class="container">
+    <div class="item">Tirumala image  <img src="Tirumala.jpg" alt="Image 1"></div>
+    <div class="item">Niagara falls <img src="niagara.jpg" alt="Image 2"></div>
+    <div class="item">Eiffel tower <img src="eiffle.jpg" alt="Image 2"></div>
+    <div class="item">Kedarnath temple <img src="kedarnath.jpg" alt="Image 2"></div>
+    <div class="item">Tajmahal<img src="tajmahal.jpg" alt="Image 2"></div>
+  </div>
+</body>
+</html>
